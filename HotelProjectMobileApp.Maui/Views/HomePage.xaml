@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelProjectMobileApp.Maui.Views.HomePage"
+             Title="Red Rose Otel">
+
+    <Grid RowDefinitions=".12*,.05*,.2*,.21*,.1*,.3*">
+        <!-- Üstteki yazı -->
+        <Label 
+            Grid.Row="0" 
+            FontAttributes="Bold,Italic" 
+            FontSize="28" 
+            TextColor="DarkRed"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            Margin="0">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnHomeTitleTapped" />
+            </Label.GestureRecognizers>
+        </Label>
+        <Label
+            Grid.Row="1"
+            Text="Odalara Göz Atın"
+            FontAttributes="Bold"
+            FontSize="Large"
+            TextColor="Black"
+            HorizontalOptions="Start"
+            Margin="10,0,0,1"/>
+
+        <!-- Yan yana iki çerçeve -->
+        <HorizontalStackLayout Grid.Row="2" Spacing="15">
+            <Frame  
+                Margin="8,0,0,0"
+                Padding="-5,30"
+                BackgroundColor="LightGray"
+                CornerRadius="10"
+                HeightRequest="150"
+                WidthRequest="190">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMountainRoomTapped" />
+                </Frame.GestureRecognizers>
+                <VerticalStackLayout Spacing="10">
+                    <Image 
+                        Source="dagmanzara.jpg" 
+                        HeightRequest="60" 
+                        WidthRequest="150"
+                        HorizontalOptions="Center"/>
+                    <Label 
+                        FontAttributes="Bold" 
+                        FontSize="15"
+                        HorizontalOptions="Center"
+                        Text="Dağ Manzaralı Oda"/>
+                </VerticalStackLayout>
+            </Frame>
+            <Frame
+                Padding="-5,30"
+                BackgroundColor="LightGray"
+                CornerRadius="10"
+                HeightRequest="150"
+                WidthRequest="190">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSeaRoomTapped" />
+                </Frame.GestureRecognizers>
+                <VerticalStackLayout Spacing="10">
+                    <Image 
+                        Source="denizoda.jpg" 
+                        HeightRequest="60" 
+                        WidthRequest="150"
+                        HorizontalOptions="Center"/>
+                    <Label 
+                        FontAttributes="Bold" 
+                        FontSize="15"
+                        HorizontalOptions="Center"
+                        Text="Deniz Manzaralı Oda"/>
+                </VerticalStackLayout>
+            </Frame>
+        </HorizontalStackLayout>
+
+        <!-- Altta tek çerçeve -->
+        <Frame
+            Grid.Row="3"
+            Margin="8,0,0,0"
+            Padding="-5,30"
+            BackgroundColor="LightGray"
+            CornerRadius="10"
+            HeightRequest="150"
+            WidthRequest="190"
+            HorizontalOptions="Start">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnSuiteRoomTapped" />
+            </Frame.GestureRecognizers>
+            <VerticalStackLayout Spacing="10">
+                <Image 
+                    Source="suitoda.jpg" 
+                    HeightRequest="60" 
+                    WidthRequest="150"
+                    HorizontalOptions="Center"/>
+                <Label 
+                    FontAttributes="Bold" 
+                    FontSize="15"
+                    HorizontalOptions="Center"
+                    Text="Suit Oda"/>
+            </VerticalStackLayout>
+        </Frame>
+        <Grid
+    Grid.Row="4"
+    Padding="0,20"
+    ColumnDefinitions=".7*, .3*">
+            <Label
+        Text="Etkinlikler"
+        FontAttributes="Bold"
+        FontSize="Large"
+        TextColor="Black"
+        Margin="10,0,0,1"
+        HorizontalOptions="Start"/>
+        </Grid>
+
+        <Frame
+    Grid.Row="5"
+    CornerRadius="15"
+    HasShadow="True"
+    BackgroundColor="White"
+    Margin="10,0,10,10"
+    Padding="0">
+            <ScrollView Orientation="Horizontal" HeightRequest="220">
+                <HorizontalStackLayout Spacing="10" Padding="10,0">
+                    <!-- 1. Etkinlik -->
+                    <Frame CornerRadius="10" WidthRequest="200" HasShadow="True" BackgroundColor="#F8F8F8">
+                        <VerticalStackLayout>
+                            <Image Source="dag.jpg" HeightRequest="120" Aspect="AspectFill"/>
+                            <Label Text="29.05.2025" FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                            <Label Text="Dağa Tırmanma" FontAttributes="Bold" FontSize="16" Margin="10,2,10,10"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <!-- 2. Etkinlik -->
+                    <Frame CornerRadius="10" WidthRequest="200" HasShadow="True" BackgroundColor="#F8F8F8">
+                        <VerticalStackLayout>
+                            <Image Source="dogayuruyus.jpg" HeightRequest="120" Aspect="AspectFill"/>
+                            <Label Text="30.05.2025" FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                            <Label Text="Doğa Yürüyüşü" FontAttributes="Bold" FontSize="16" Margin="10,2,10,10"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <!-- 3. Etkinlik -->
+                    <Frame CornerRadius="10" WidthRequest="200" HasShadow="True" BackgroundColor="#F8F8F8">
+                        <VerticalStackLayout>
+                            <Image Source="bisikletur.jpg" HeightRequest="120" Aspect="AspectFill"/>
+                            <Label Text="31.05.2025" FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                            <Label Text="Bisiklet Turu" FontAttributes="Bold" FontSize="16" Margin="10,2,10,10"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" WidthRequest="200" HasShadow="True" BackgroundColor="#F8F8F8">
+                        <VerticalStackLayout>
+                            <Image Source="kano.jpg" HeightRequest="120" Aspect="AspectFill"/>
+                            <Label Text="01.06.2025" FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                            <Label Text="Kano / Göl Turu" FontAttributes="Bold" FontSize="16" Margin="10,2,10,10"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" WidthRequest="200" HasShadow="True" BackgroundColor="#F8F8F8">
+                        <VerticalStackLayout>
+                            <Image Source="yamacparasut.jpg" HeightRequest="120" Aspect="AspectFill"/>
+                            <Label Text="02.06.2025" FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                            <Label Text="Yamaç Paraşütü" FontAttributes="Bold" FontSize="16" Margin="10,2,10,10"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" WidthRequest="200" HasShadow="True" BackgroundColor="#F8F8F8">
+                        <VerticalStackLayout>
+                            <Image Source="yogaseans.jpg" HeightRequest="120" Aspect="AspectFill"/>
+                            <Label Text="03.06.2025" FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                            <Label Text="Yoga Seansı" FontAttributes="Bold" FontSize="16" Margin="10,2,10,10"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                    <Frame CornerRadius="10" WidthRequest="200" HasShadow="True" BackgroundColor="#F8F8F8">
+                        <VerticalStackLayout>
+                            <Image Source="fotograf.jpg" HeightRequest="120" Aspect="AspectFill"/>
+                            <Label Text="02.07.2025" FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                            <Label Text="Fotoğrafçılık" FontAttributes="Bold" FontSize="16" Margin="10,2,10,10"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </HorizontalStackLayout>
+            </ScrollView>
+        </Frame>
+    </Grid>
+    
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{579BA194-3F42-436A-B2FA-26ED6CBCA9D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{CB72C441-4670-4706-AAC7-776ECDE3481B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mobile", "Mobile", "{C5CF613A-3F5C-4FB9-A37D-D12C82682D37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProjectMobileApp.Core", "HotelProjectMobileApp.Core\HotelProjectMobileApp.Core.csproj", "{E9D122E3-2C79-470B-AE62-26D2CBCEB8FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProjectMobileApp.Api", "HotelProjectMobileApp.Api\HotelProjectMobileApp.Api.csproj", "{78330598-50F8-45E0-A529-D25B251282AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelProjectMobileApp.Maui", "HotelProjectMobileApp.Maui\HotelProjectMobileApp.Maui.csproj", "{31325A06-AEDB-4195-9F88-1636A6E8EF31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9D122E3-2C79-470B-AE62-26D2CBCEB8FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D122E3-2C79-470B-AE62-26D2CBCEB8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D122E3-2C79-470B-AE62-26D2CBCEB8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D122E3-2C79-470B-AE62-26D2CBCEB8FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78330598-50F8-45E0-A529-D25B251282AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78330598-50F8-45E0-A529-D25B251282AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78330598-50F8-45E0-A529-D25B251282AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78330598-50F8-45E0-A529-D25B251282AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31325A06-AEDB-4195-9F88-1636A6E8EF31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31325A06-AEDB-4195-9F88-1636A6E8EF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31325A06-AEDB-4195-9F88-1636A6E8EF31}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{31325A06-AEDB-4195-9F88-1636A6E8EF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31325A06-AEDB-4195-9F88-1636A6E8EF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31325A06-AEDB-4195-9F88-1636A6E8EF31}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9D122E3-2C79-470B-AE62-26D2CBCEB8FD} = {579BA194-3F42-436A-B2FA-26ED6CBCA9D8}
+		{78330598-50F8-45E0-A529-D25B251282AA} = {CB72C441-4670-4706-AAC7-776ECDE3481B}
+		{31325A06-AEDB-4195-9F88-1636A6E8EF31} = {C5CF613A-3F5C-4FB9-A37D-D12C82682D37}
+	EndGlobalSection
+EndGlobal

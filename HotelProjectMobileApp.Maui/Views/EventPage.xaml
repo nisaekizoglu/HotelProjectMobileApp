@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelProjectMobileApp.Maui.Views.EventPage"
+             Title="Etkinlikler">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="18">
+            <!-- 1. Etkinlik -->
+            <Frame CornerRadius="15" HasShadow="True" BackgroundColor="White" Padding="0">
+                <VerticalStackLayout>
+                    <Image Source="dag.jpg" HeightRequest="160" Aspect="AspectFill"/>
+                    <Label Text="29.05.2025 " FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                    <Label Text="Dağa Tırmanma" FontAttributes="Bold" FontSize="18" Margin="10,2,10,0"/>
+                    <Label Text="Zorlu ama heyecan verici bir macera arayanlar için eşsiz bir deneyim. Profesyonel rehberler eşliğinde güvenli rotalarda tırmanış yapabilirsiniz." FontSize="14" TextColor="Black" Margin="10,2,10,10"/>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- 2. Etkinlik -->
+            <Frame CornerRadius="15" HasShadow="True" BackgroundColor="White" Padding="0">
+                <VerticalStackLayout>
+                    <Image Source="dogayuruyus.jpg" HeightRequest="160" Aspect="AspectFill"/>
+                    <Label Text="30.05.2025 " FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                    <Label Text="Doğa Yürüyüşü" FontAttributes="Bold" FontSize="18" Margin="10,2,10,0"/>
+                    <Label Text="Doğayla iç içe huzurlu bir yolculuk sunar. Belirlenen parkurlarda, kuş sesleri eşliğinde keyifli bir yürüyüş sizi bekliyor." FontSize="14" TextColor="Black" Margin="10,2,10,10"/>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- 3. Etkinlik -->
+            <Frame CornerRadius="15" HasShadow="True" BackgroundColor="White" Padding="0">
+                <VerticalStackLayout>
+                    <Image Source="bisikletur.jpg" HeightRequest="160" Aspect="AspectFill"/>
+                    <Label Text="31.05.2025 " FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                    <Label Text="Bisiklet Turu" FontAttributes="Bold" FontSize="18" Margin="10,2,10,0"/>
+                    <Label Text="Otel çevresindeki doğal güzellikleri keşfetmenin en eğlenceli yollarından biri. Farklı zorluk seviyelerinde parkurlar mevcuttur." FontSize="14" TextColor="Black" Margin="10,2,10,10"/>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- 4. Etkinlik -->
+            <Frame CornerRadius="15" HasShadow="True" BackgroundColor="White" Padding="0">
+                <VerticalStackLayout>
+                    <Image Source="kano.jpg" HeightRequest="160" Aspect="AspectFill"/>
+                    <Label Text="01.06.2025 " FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                    <Label Text="Kano / Göl Turu" FontAttributes="Bold" FontSize="18" Margin="10,2,10,0"/>
+                    <Label Text="Sessiz ve sakin bir gölde kano yaparak doğanın huzurunu hissedin. Su üzerinde süzülürken eşsiz manzaralar eşlik eder." FontSize="14" TextColor="Black" Margin="10,2,10,10"/>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- 5. Etkinlik -->
+            <Frame CornerRadius="15" HasShadow="True" BackgroundColor="White" Padding="0">
+                <VerticalStackLayout>
+                    <Image Source="yamacparasut.jpg" HeightRequest="160" Aspect="AspectFill"/>
+                    <Label Text="02.06.2025 " FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                    <Label Text="Yamaç Paraşütü" FontAttributes="Bold" FontSize="18" Margin="10,2,10,0"/>
+                    <Label Text="Adrenalin tutkunları için gökyüzünde süzülme fırsatı. Muhteşem manzaranın tadını havadan çıkarın." FontSize="14" TextColor="Black" Margin="10,2,10,10"/>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- 6. Etkinlik -->
+            <Frame CornerRadius="15" HasShadow="True" BackgroundColor="White" Padding="0">
+                <VerticalStackLayout>
+                    <Image Source="yogaseans.jpg" HeightRequest="160" Aspect="AspectFill"/>
+                    <Label Text="03.06.2025 " FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                    <Label Text="Yoga Seansı" FontAttributes="Bold" FontSize="18" Margin="10,2,10,0"/>
+                    <Label Text="Doğayla iç içe bir ortamda yapılan yoga, hem bedeninizi hem zihninizi dinlendirir. Taze hava ve huzur dolu atmosfer eşliğinde rahatlayın." FontSize="14" TextColor="Black" Margin="10,2,10,10"/>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- 7. Etkinlik -->
+            <Frame CornerRadius="15" HasShadow="True" BackgroundColor="White" Padding="0">
+                <VerticalStackLayout>
+                    <Image Source="fotograf.jpg" HeightRequest="160" Aspect="AspectFill"/>
+                    <Label Text="02.07.2025 " FontSize="12" TextColor="Gray" Margin="10,5,10,0"/>
+                    <Label Text="Fotoğrafçılık Turu" FontAttributes="Bold" FontSize="18" Margin="10,2,10,0"/>
+                    <Label Text="Doğanın güzelliklerini ölümsüzleştirmek isteyenler için rehber eşliğinde fotoğraf gezileri. Güneşin doğuşundan batışına eşsiz kareler yakalayın." FontSize="14" TextColor="Black" Margin="10,2,10,10"/>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

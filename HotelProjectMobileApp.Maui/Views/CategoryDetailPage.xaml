@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelProjectMobileApp.Maui.Views.CategoryDetailPage"
+             Title="Oda Detayı">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <!-- Oda Fotoğrafı -->
+            <Frame HasShadow="True" CornerRadius="20" Padding="0">
+                <Image x:Name="roomImage" Source="denizoda.jpg" HeightRequest="220" Aspect="AspectFill"/>
+            </Frame>
+
+            <!-- Oda Başlığı -->
+            <Label x:Name="roomTitle" Text="Deniz Manzaralı Oda"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   TextColor="DarkRed"
+                   HorizontalOptions="Center"/>
+
+            <!-- Oda Açıklaması -->
+            <Label x:Name="roomDesc" Text="Geniş ve ferah deniz manzaralı odamızda huzurlu bir tatil sizi bekliyor. Modern dekorasyon ve konfor bir arada."
+                   FontSize="16"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,0,0,10"/>
+
+            <!-- Ücret ve Kapasite Bilgileri -->
+            <Frame BackgroundColor="#F8F8F8" CornerRadius="15" Padding="15" HasShadow="True">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Ücret:" FontAttributes="Bold" FontSize="16" TextColor="Gray"/>
+                    <Label x:Name="roomPrice" Text="2500 TL / Gece" FontSize="16" TextColor="Black"/>
+                    <Label Text="Kapasite:" FontAttributes="Bold" FontSize="16" TextColor="Gray" Margin="0,10,0,0"/>
+                    <Label x:Name="roomCapacity" Text="2 Yetişkin + 1 Çocuk" FontSize="16" TextColor="Black"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- AR Görünüm Butonu -->
+            <Button Text="AR ile Odayı Görüntüle"
+                    BackgroundColor="#4CAF50"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    CornerRadius="15"
+                    HeightRequest="50"
+                    Margin="0,20,0,0"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnARButtonClicked"/>
+
+            <!-- Rezervasyon Yap Butonu -->
+            <Button Text="Rezervasyon Yap"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    CornerRadius="15"
+                    HeightRequest="50"
+                    Margin="0,10,0,0"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="OnReservationButtonClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelProjectMobileApp.Maui.Views.ReservationPage"
+             Title="Rezervasyon Yap">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="18">
+            <Label Text="Rezervasyon Formu"
+                   FontAttributes="Bold"
+                   FontSize="26"
+                   TextColor="DarkRed"
+                   HorizontalOptions="Center"/>
+
+            <Entry x:Name="entryName" Placeholder="İsim" FontSize="18" BackgroundColor="#FFF5F5F5" Margin="0,0,0,0"/>
+            <Entry x:Name="entrySurname" Placeholder="Soyisim" FontSize="18" BackgroundColor="#FFF5F5F5"/>
+            <Entry x:Name="entryPhone" Placeholder="Telefon Numarası" FontSize="18" Keyboard="Telephone" BackgroundColor="#FFF5F5F5"/>
+            <DatePicker x:Name="entryCheckIn" Format="dd.MM.yyyy" />
+            <DatePicker x:Name="entryCheckOut" Format="dd.MM.yyyy" />
+            <Picker x:Name="roomPicker"
+                    Title="Oda Seçin"
+                    FontSize="18"
+                    TitleColor="DarkRed"
+                    TextColor="Black"
+                    Margin="0,0,0,0">
+                <Picker.Items>
+                    <x:String>Dağ Manzaralı Oda</x:String>
+                    <x:String>Deniz Manzaralı Oda</x:String>
+                    <x:String>Suit Oda</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button Text="Ücreti Hesapla"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    CornerRadius="15"
+                    HeightRequest="50"
+                    Clicked="OnCalculateClicked"
+                    HorizontalOptions="FillAndExpand"/>
+
+            <Label x:Name="labelResult"
+                   Text=""
+                   FontSize="20"
+                   TextColor="DarkRed"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,0"/>
+
+            <Button Text="Rezervasyon Yap"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    CornerRadius="15"
+                    HeightRequest="50"
+                    Clicked="OnReservationClicked"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="0,10,0,0"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

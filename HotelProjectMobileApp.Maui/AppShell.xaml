@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="HotelProjectMobileApp.Maui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HotelProjectMobileApp.Maui.Views"
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutBackgroundColor="White"
+    Shell.BackgroundColor="White"
+    Shell.ForegroundColor="Black"
+    Shell.NavBarIsVisible="True"
+    Shell.TabBarIsVisible="False"
+    Shell.TitleColor="Black">
+
+    <Shell.FlyoutHeader>
+        <Image Source="redroseotel.jpg" />
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Ana Sayfa" ContentTemplate="{DataTemplate local:HomePage}"
+                      Icon="home.png"
+                      Route="HomePage"/>
+
+        <ShellContent Title="Otel Odaları" ContentTemplate="{DataTemplate local:CategoryDetailPage}"
+                      Icon="hotelbed.png"
+                      Route="CategoryDetailPage"/>
+
+        <ShellContent Title="Rezervasyon" ContentTemplate="{DataTemplate local:ReservationPage}"
+                      Icon="reservation.png"
+                      Route="ReservationPage"/>
+
+        <ShellContent Title="Etkinlikler" ContentTemplate="{DataTemplate local:EventPage}"
+                      Icon="confetti.png"
+                      Route="EventPage"/>
+
+    </FlyoutItem>
+
+    <ShellContent
+        Title="Giriş Yap"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage"/>
+
+</Shell>
